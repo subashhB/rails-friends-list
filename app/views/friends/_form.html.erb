@@ -12,30 +12,30 @@
   <% end %>
 
   <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+    <% form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name, class: "form-control", placeholder: "First Name" %>
   </div>
-
+<br/>
   <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
+    <% form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name, class: "form-control", placeholder: "Last Name" %>
   </div>
-
+          <br/>
   <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+    <% form.label :email, style: "display: block" %>
+    <%= form.text_field :email, class: "form-control", placeholder: "E-mail Address" %>
   </div>
-
+  <br/>
   <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+    <% form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone, class: "form-control", placeholder: "Phone Number" %>
   </div>
-
+  <br/>
   <div>
-    <%= form.label :twitter, style: "display: block" %>
-    <%= form.text_field :twitter %>
+    <% form.label :twitter, style: "display: block" %>
+    <%= form.text_field :twitter, class: "form-control", placeholder: "Twitter Handle" %>
   </div>
-
+  <br/>
   <div>
     <%= form.submit %>
   </div>
