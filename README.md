@@ -6,4 +6,8 @@ This is a basic Rails app that explores the framework as a beginner containing t
 
 This project also involves the Devise for Authorization and Authentication Management.
 
-hit rails s on the terminal to start this project.
+hit 
+````
+rails s
+````
+on the terminal to start this project.
