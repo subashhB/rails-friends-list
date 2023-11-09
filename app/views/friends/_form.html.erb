@@ -35,6 +35,8 @@
     <% form.label :twitter, style: "display: block" %>
     <%= form.text_field :twitter, class: "form-control", placeholder: "Twitter Handle" %>
   </div>
+  <%= form.number_field :user_id, id: :friend_user_id, value: current_user.id, type: :hidden %>
+  <%= current_user.inspect %>
   <br/>
   <div>
     <%= form.submit %>

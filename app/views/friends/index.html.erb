@@ -12,12 +12,14 @@
         <th>E-mail</th>
         <th>Phone</th>
         <th>Twitter</th>
+        <th>User Id</th>
         <th>Actions</th>
       </tr>
     </thead>
     <tbody>
 
       <% @friends.each do |friend| %>
+        <% if friend.user == current_user %>
         <tr>
           <td>
             <%= friend.first_name %>
@@ -34,10 +36,15 @@
           <td>
             <%= friend.twitter %>
           </td>
+          <td> 
+            <%= friend.user.id %>
+          </td>
           <td>
             <%= link_to "Show Details" , friend %>
           </td>
+          <%= friend.inspect %>
         </tr>
+        <% end %>
         <% end %>
     </tbody>
   </table>
